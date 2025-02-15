@@ -12,9 +12,9 @@ const Services = () => {
 
   return (
     <section className="services">
-      <div className="container">
-        <h2 className="title1" data-aos="fade-up">Our Services</h2>
-        <p className="subtitle" data-aos="fade-up">We offer top-notch services to meet your needs.</p>
+      <div className="container_services">
+        <h2 className="title_services" data-aos="fade-up">Our Services</h2>
+        <p className="subtitle_services" data-aos="fade-up">We offer top-notch services to meet your needs.</p>
         <div className="services-grid">
           {serviceData.map((service) => (
             <div className="service-card" key={service.id} data-aos="flip-left">

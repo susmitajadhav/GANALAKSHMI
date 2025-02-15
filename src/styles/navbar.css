@@ -8,12 +8,11 @@
     color: white;
     position: relative;
     z-index: 1000;
-
 }
 
 /* Logo Styling */
 .logo img {
-    width: 180px;
+    width: 160px;
     height: auto;
     object-fit: contain;
     border-radius: 10px;
@@ -29,7 +28,7 @@
     display: flex;
     align-items: center;
     list-style: none;
-    margin-right:200px;
+    margin-right: 150px;
     padding: 0;
 }
 
@@ -40,7 +39,7 @@
 .nav-links a {
     text-decoration: none;
     color: #000;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: 300;
     transition: all 0.3s ease-in-out;
     position: relative;
@@ -50,26 +49,9 @@
     color: #00A84D;
 }
 
-/* Animated Underline Effect */
-.nav-links a::after {
-    content: "";
-    width: 0%;
-    height: 2px;
-    background: #00A84D;
-    position: absolute;
-    left: 50%;
-    bottom: -5px;
-    transition: all 0.3s ease-in-out;
-    transform: translateX(-50%);
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
 /* 🔥 Get a Quote Button */
 .custom-get-quote-btn {
-    padding: 12px 30px;
+    padding: 12px 25px;
     font-size: 16px;
     font-weight: bold;
     border-radius: 15px;
@@ -92,6 +74,7 @@
     position: absolute;
     top: 15px;
     right: 20px;
+    color: #000;
 }
 
 .hamburger span {
@@ -100,19 +83,6 @@
     width: 30px;
     margin: 5px 0;
     transition: all 0.3s ease-in-out;
-}
-
-/* Animated Hamburger Open */
-.hamburger.open span:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
-
-.hamburger.open span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.open span:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
 }
 
 /* 📱 Side Menu for Mobile */
@@ -139,13 +109,9 @@
 }
 
 .side-menu-links a {
-    color: white;
+    color: rgb(17, 15, 15);
     text-decoration: none;
     font-size: 1.2rem;
-}
-
-.side-menu-links a:hover {
-    color: #f2f2f2;
 }
 
 /* 📱 Responsive Styles */
@@ -161,5 +127,11 @@
 @media (max-width: 768px) {
     .side-menu {
         width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem 2rem;
     }
 }

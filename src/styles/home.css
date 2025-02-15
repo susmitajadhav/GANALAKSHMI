@@ -323,7 +323,7 @@
   }
 }
 
-   /* ===== Stylish & Animated About Us Section ===== */
+/* ===== Responsive & Stylish About Us Section ===== */
 .about-us-container {
   display: flex;
   align-items: center;
@@ -339,50 +339,44 @@
 }
 
 /* Floating Background Animation */
-.about-us-container::before {
+.about-us-container::before,
+.about-us-container::after {
   content: "";
   position: absolute;
   width: 200px;
   height: 200px;
   background: radial-gradient(circle, rgba(255, 140, 0, 0.2) 20%, transparent);
   border-radius: 50%;
-  top: -50px;
-  left: -50px;
   animation: floatAnimation 6s infinite ease-in-out;
 }
 
+.about-us-container::before {
+  top: -50px;
+  left: -50px;
+}
+
 .about-us-container::after {
-  content: "";
-  position: absolute;
   width: 250px;
   height: 250px;
   background: radial-gradient(circle, rgba(0, 123, 255, 0.2) 20%, transparent);
-  border-radius: 50%;
   bottom: -50px;
   right: -50px;
-  animation: floatAnimation 8s infinite ease-in-out;
+  animation-duration: 8s;
 }
 
 @keyframes floatAnimation {
-  0% {
-      transform: translateY(0px);
-  }
-  50% {
-      transform: translateY(20px);
-  }
-  100% {
-      transform: translateY(0px);
-  }
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(20px); }
+  100% { transform: translateY(0px); }
 }
 
-/* Image Section with Hover Effect */
+/* Image Section */
 .about-image {
   flex: 1;
   max-width: 45%;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
 }
 
 .about-image img {
@@ -405,9 +399,9 @@
   padding: 20px;
 }
 
-/* Glowing Title Effect */
+/* Animated Title */
 .about-title {
-  font-size: 2.8rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #1f2937;
   text-transform: uppercase;
@@ -415,38 +409,21 @@
   background: linear-gradient(45deg, #ff6b6b, #ffa502);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  margin-bottom: 20px;
-  animation: glow 2s infinite alternate;
 }
 
 .about-title span {
   color: #007bff;
 }
 
-@keyframes glow {
-  0% {
-      text-shadow: 0px 0px 10px rgba(255, 107, 107, 0.3);
-  }
-  100% {
-      text-shadow: 0px 0px 20px rgba(255, 107, 107, 0.7);
-  }
-}
-
-/* Animated Descriptions */
+/* Paragraphs */
 .about-description,
 .about-mission {
   font-size: 1.2rem;
   color: #374151;
   line-height: 1.6;
-  font-weight: 500;
-  background: #fff;
-  padding: 12px;
-  border-radius: 8px;
-  backdrop-filter: blur(5px);
-  animation: fadeIn 1.5s ease-in-out;
 }
 
-/* Stylish Button with Hover Effect */
+/* Button */
 .about-btn {
   background: linear-gradient(135deg, #007bff, #ff6b6b);
   color: white;
@@ -457,17 +434,61 @@
   border: none;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .about-btn:hover {
   background: linear-gradient(135deg, #ff6b6b, #007bff);
   transform: translateY(-3px);
-  box-shadow: 0px 15px 30px rgba(255, 107, 107, 0.5);
 }
 
+/* ===== RESPONSIVE DESIGN ===== */
 
+/* Mobile (320px - 480px) */
+@media screen and (max-width: 480px) {
+  .about-us-container {
+    flex-direction: column;
+    padding: 40px 5%;
+  }
+  .about-image {
+    max-width: 90%;
+  }
+  .about-content {
+    max-width: 100%;
+    text-align: center;
+  }
+  .about-title {
+    font-size: 2rem;
+  }
+  .about-description,
+  .about-mission {
+    font-size: 1rem;
+  }
+}
 
+/* Tablets (768px) */
+@media screen and (max-width: 768px) {
+  .about-us-container {
+    padding: 50px 8%;
+    flex-direction: column;
+  }
+  .about-image {
+    max-width: 80%;
+  }
+  .about-content {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+/* Large Screens (1024px - 1440px) */
+@media screen and (max-width: 1024px) {
+  .about-us-container {
+    padding: 60px 10%;
+  }
+  .about-title {
+    font-size: 2.2rem;
+  }
+}
 
 
   /* Satisfied Customers Section */

@@ -116,12 +116,13 @@ const Home = () => {
         </section>
 
 
-      <motion.div 
+        <motion.div 
       className="about-us-container"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
     >
+      {/* Image Section */}
       <motion.div
         className="about-image"
         initial={{ opacity: 0, scale: 0.8, rotate: -5 }}
@@ -135,6 +136,7 @@ const Home = () => {
         />
       </motion.div>
 
+      {/* Content Section */}
       <motion.div
         className="about-content"
         initial={{ opacity: 0, x: 100 }}
@@ -149,7 +151,8 @@ const Home = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 1 }}
-        > GANALAKSHMI Associate, established in 2024, specializes in **designing,
+        > 
+          GANALAKSHMI Associate, established in 2024, specializes in **designing,
           manufacturing, erection & commissioning** for Sugar, Power Plant,
           Co-Generation, Distillery & Ethanol, Khandsari & Jaggery industries.
         </motion.p>
@@ -174,8 +177,8 @@ const Home = () => {
         </motion.button>
       </motion.div>
     </motion.div>
-  
 
+    
       <section className="product-section">
           <h2 className="title" data-aos="fade-down">Our Products</h2>
           <p className="subtitle" data-aos="fade-up">Explore our wide range of high-quality products.</p>

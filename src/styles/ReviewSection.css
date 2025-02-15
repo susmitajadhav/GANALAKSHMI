@@ -1,0 +1,101 @@
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background: #fff;
+  }
+  
+  .section-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+  }
+  
+  .slider-container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 20px 0; /* More vertical padding */
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .slick-slide > div {
+    margin: 0 20px; /* Ensures proper spacing between slides */
+  }
+  
+  
+  .testimonial-card {
+    background: #fff;
+    /* padding: 20px; */
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    margin: 10px; /* Space between cards */
+    min-height: 250px; /* Ensures uniform height */
+  }
+  
+  .testimonial-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial-card h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .role {
+    color: #888;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .stars {
+    color: #f4b400;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .review {
+    font-size: 14px;
+    color: #555;
+    font-style: italic;
+    line-height: 1.5;
+  }
+  
+  /* Fix Slick slider spacing */
+  .slick-slide > div {
+    margin: 0 10px; /* Adjust spacing between slides */
+  }
+  
+  .slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #bbb;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ff4d4d;
+  }
+  

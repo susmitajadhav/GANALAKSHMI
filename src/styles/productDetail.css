@@ -1,0 +1,134 @@
+/* Container Styling */
+.info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(120deg, #f9f9f9, #e6f7ff);
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Image Styling */
+.info-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  transition: transform 0.4s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.info-image img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Product Box */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 800px;
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeUp 0.8s ease-in-out;
+}
+
+/* Title */
+.info-title {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  color: #222;
+}
+
+/* Price Styling */
+.info-price {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #e60073;
+  margin-bottom: 15px;
+  animation: pulse 1.2s infinite alternate;
+}
+
+/* Description */
+.info-description {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 600px;
+  margin-bottom: 15px;
+}
+
+/* Features & Applications List */
+.info-list {
+  list-style-type: square;
+  text-align: left;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.info-list li {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+/* Buy Now Button */
+.buy-now {
+  margin-top: 20px;
+  padding: 12px 24px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  background: #007bff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.buy-now:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Error Message */
+.info-not-found {
+  font-size: 1.8rem;
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}

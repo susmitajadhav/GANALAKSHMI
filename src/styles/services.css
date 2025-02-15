@@ -1,0 +1,179 @@
+/* General Styles */
+.services {
+  background: linear-gradient(135deg, #f3f4f6, #d4e7fa);
+  color: #333;
+  text-align: center;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Section Title */
+/* Title Animation */
+.title1 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #9c280b;
+  position: relative;
+  animation: zoomIn 1.2s ease-in-out, fadeInUp 1s ease-in-out;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.title1:hover {
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px rgba(221, 220, 218, 0.8);
+}
+
+/* Subtitle Animation */
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 50px;
+  color: #4b5563;
+  animation: fadeInUp 1.5s ease-in-out, textWave 2s ease-in-out infinite alternate;
+  text-align: center;
+}
+
+/* Keyframe Animations */
+@keyframes zoomIn {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Subtitle Text Wave Animation */
+@keyframes textWave {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+/* Service Cards */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  justify-content: center;
+}
+
+.service-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Image Container (for Parallax Effect) */
+.image-container {
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.service-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease-in-out;
+}
+
+.service-card:hover .service-img {
+  transform: scale(1.1);
+}
+
+/* Animated Button */
+.animated-button {
+  background: linear-gradient(90deg, #eb7d33, #ec0606);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  margin-top: 15px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.animated-button::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3) 10%, transparent 50%);
+  transition: width 0.3s ease-in-out, height 0.3s ease-in-out, top 0.3s ease-in-out, left 0.3s ease-in-out;
+  transform: translate(-50%, -50%);
+}
+
+.animated-button:hover::before {
+  width: 0;
+  height: 0;
+}
+
+.animated-button:hover {
+  background: linear-gradient(90deg, #110ee6, #25049b);
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+      transform: translateY(-30px);
+      opacity: 0;
+  }
+  to {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .services-grid {
+      grid-template-columns: 1fr;
+  }
+}

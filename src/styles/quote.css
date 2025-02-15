@@ -1,0 +1,100 @@
+/* Quote Page Styles */
+.quote-page {
+    background: linear-gradient(to right, #004d9b, #00a84d);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    font-family: "Poppins", sans-serif;
+    color: white;
+  }
+  
+  /* Animated Heading */
+  .quote-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 2rem;
+    background: linear-gradient(45deg, #ffffff, #ff9800);
+    background-clip: text;
+    -webkit-background-clip: text; /* For Safari */
+    -webkit-text-fill-color: transparent;
+    color: transparent; /* Fallback for browsers that don't support text-fill-color */
+    
+  }
+  
+  /* Form Styles */
+  .quote-form {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Input Fields */
+  .quote-form input,
+  .quote-form select,
+  .quote-form textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: 0.3s;
+    background: white;
+  }
+  
+  .quote-form input:focus,
+  .quote-form select:focus,
+  .quote-form textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #ff9800;
+  }
+  
+  /* Textarea */
+  .quote-form textarea {
+    height: 100px;
+    resize: none;
+  }
+  
+  /* Submit Button */
+  .quote-submit-btn {
+    background: #ff9800;
+    color: white;
+    padding: 12px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .quote-submit-btn:hover {
+    background: white;
+    color: #ff9800;
+    border: 2px solid #ff9800;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .quote-page {
+      padding: 2rem;
+    }
+  
+    .quote-heading {
+      font-size: 2rem;
+    }
+  
+    .quote-form {
+      width: 100%;
+    }
+  }
+  

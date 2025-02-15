@@ -1,0 +1,165 @@
+/* 🌟 Navbar Base Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    padding: 2rem 4rem;
+    color: white;
+    position: relative;
+    z-index: 1000;
+
+}
+
+/* Logo Styling */
+.logo img {
+    width: 180px;
+    height: auto;
+    object-fit: contain;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo img:hover {
+    transform: rotate(5deg) scale(1.05);
+}
+
+/* 🔹 Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right:200px;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+    font-weight: 300;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: #00A84D;
+}
+
+/* Animated Underline Effect */
+.nav-links a::after {
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #00A84D;
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    transition: all 0.3s ease-in-out;
+    transform: translateX(-50%);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+/* 🔥 Get a Quote Button */
+.custom-get-quote-btn {
+    padding: 12px 30px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 15px;
+    background: #29f1bf;
+    transition: all 0.3s ease-in-out;
+}
+
+.custom-get-quote-btn:hover {
+    background: white;
+    color: #004D9B;
+    border: 2px solid #004D9B;
+}
+
+/* 🍔 Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 2000;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.hamburger span {
+    background: white;
+    height: 3px;
+    width: 30px;
+    margin: 5px 0;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animated Hamburger Open */
+.hamburger.open span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.open span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* 📱 Side Menu for Mobile */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background: linear-gradient(to bottom, #00bcd4, #008c9e);
+    color: white;
+    padding-top: 3rem;
+    border-radius: 15px 0 0 15px;
+}
+
+.side-menu-links {
+    list-style: none;
+    padding: 0;
+}
+
+.side-menu-links li {
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.side-menu-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.side-menu-links a:hover {
+    color: #f2f2f2;
+}
+
+/* 📱 Responsive Styles */
+@media (max-width: 1024px) {
+    .nav-links {
+        display: none;
+    }
+    .hamburger {
+        display: flex;
+    }
+}
+
+@media (max-width: 768px) {
+    .side-menu {
+        width: 100%;
+    }
+}

@@ -1,0 +1,82 @@
+/* Service Detail Container */
+.service-detail-container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 40px;
+    max-width: 1200px;
+    height: auto;
+    min-height: 500px;
+    margin: auto;
+}
+
+/* Image Container */
+.image-container2 {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.service-image2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Service Content */
+.service-content2 {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+.service-title2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+}
+
+.service-description2 {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Back Button Styling */
+.back-button2 {
+    padding: 10px 15px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.back-button2:hover {
+    background-color: darkorange;
+}
+
+/* Responsive Design Fixes */
+@media (max-width: 768px) {
+    .service-detail-container2 {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .image-container2,
+    .service-content2 {
+        max-width: 100%;
+    }
+
+    .service-image2 {
+        height: auto;
+        max-height: 400px;
+    }
+}

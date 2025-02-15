@@ -1,3 +1,4 @@
+//home.jsx
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -72,48 +73,47 @@ const Home = () => {
       {/* Animated Carousel */}
       <Carousel />
 
-      {/* Projects Handled Section */}
       <section className="projects-handled">
-        <h2 data-aos="fade-up">Projects Handled</h2>
-        <div className="projects-grid">
-          <motion.div className="project-box" whileHover={{ scale: 1.05 }}>
-            <FaProjectDiagram className="project-icon yellow" />
-            <h3>{projects}+</h3>
-            <p>Completed Projects</p>
-          </motion.div>
-          <motion.div className="project-box" whileHover={{ scale: 1.05 }}>
-            <FaUserTie className="project-icon blue" />
-            <h3>{clients}+</h3>
-            <p>Clients Served</p>
-          </motion.div>
-          <motion.div className="project-box" whileHover={{ scale: 1.05 }}>
-            <FaGraduationCap className="project-icon purple" />
-            <h3>{machinery.toLocaleString()}+</h3>
-            <p>Custom Machinery</p>
-          </motion.div>
-          <motion.div className="project-box" whileHover={{ scale: 1.05 }}>
-            <FaCertificate className="project-icon gray" />
-            <h3>{electrical.toLocaleString()}+</h3>
-            <p>Electrical & Instrumentation</p>
-          </motion.div>
-        </div>
-      </section>
+      <h2 data-aos="fade-up">Projects Handled</h2>
+      <div className="projects-grid">
+        <motion.div className="project-box" whileHover={{ scale: 1.05 }}>
+          <FaProjectDiagram className="project-icon yellow" />
+          <h3>{projects}+</h3>
+          <p>Completed Projects</p>
+        </motion.div>
+        <motion.div className="project-box" whileHover={{ scale: 1.05 }}>
+          <FaUserTie className="project-icon blue" />
+          <h3>{clients}+</h3>
+          <p>Clients Served</p>
+        </motion.div>
+        <motion.div className="project-box" whileHover={{ scale: 1.05 }}>
+          <FaGraduationCap className="project-icon purple" />
+          <h3>{machinery.toLocaleString()}+</h3>
+          <p>Custom Machinery</p>
+        </motion.div>
+        <motion.div className="project-box" whileHover={{ scale: 1.05 }}>
+          <FaCertificate className="project-icon gray" />
+          <h3>{electrical.toLocaleString()}+</h3>
+          <p>Electrical & Instrumentation</p>
+        </motion.div>
+      </div>
+    </section>
 
       {/* Our Satisfied Customers - Auto Scrolling Section */}
       <section className="satisfied-customers">
-        <h2>Our Satisfied Customers</h2>
-        <motion.div
-          className="customer-slider"
-          animate={{ x: ["100%", "-100%"] }}
-          transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
-        >
-          {customers.map((customer) => (
-            <div key={customer.id} className="customer-logo">
-              <img src={customer.logo} alt={customer.name} />
-            </div>
-          ))}
-        </motion.div>
-      </section>
+            <h2>Our Satisfied Customers</h2>
+            <motion.div
+                className="customer-slider"
+                animate={{ x: ["100%", "-100%"] }}
+                transition={{ repeat: Infinity, duration: 12, ease: "linear" }}
+            >
+                {customers.map((customer) => (
+                    <div key={customer.id} className="customer-logo">
+                        <img src={customer.logo} alt={customer.name} />
+                    </div>
+                ))}
+            </motion.div>
+        </section>
 
 
       <motion.div 
@@ -142,15 +142,14 @@ const Home = () => {
         transition={{ duration: 1.5 }}
       >
         <h2 className="about-title">
-          About <span>SAV-Tech Associate</span>
+          About <span>Ganalakshmi Engineers</span>
         </h2>
         <motion.p 
           className="about-description"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 1 }}
-        >
-          SAV-Tech Associate, established in 2024, specializes in **designing,
+        > GANALAKSHMI Associate, established in 2024, specializes in **designing,
           manufacturing, erection & commissioning** for Sugar, Power Plant,
           Co-Generation, Distillery & Ethanol, Khandsari & Jaggery industries.
         </motion.p>

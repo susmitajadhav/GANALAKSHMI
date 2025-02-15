@@ -27,10 +27,10 @@ const Footer = () => {
           <h3>Useful Links</h3>
           <ul>
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/aboutus">About</Link></li>
-            <li><Link to="/services">Services</Link></li>
-            <li><Link to="/terms">Terms of Service</Link></li>
-            <li><Link to="/privacy">Privacy Policy</Link></li>
+            <li><Link to="/About">About</Link></li>
+            <li><Link to="/Services">Services</Link></li>
+            <li><Link to="/Product">Product</Link></li>
+            <li><Link to="/Gallery">Gallery</Link></li>
           </ul>
         </div>
 

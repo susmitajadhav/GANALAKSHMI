@@ -13,7 +13,7 @@ const AboutUs = () => {
       <div className="container">
         <h2 className="title" data-aos="fade-up">About Ghanalakshmi</h2>
         <p className="subtitle" data-aos="fade-up" data-aos-delay="200">
-          At Ghanalakshmi, we are dedicated to innovation, quality, and 
+          At GANALAKSHMI, we are dedicated to innovation, quality, and 
           customer satisfaction. Our expertise spans multiple industries, 
           ensuring tailored solutions for every need.
         </p>

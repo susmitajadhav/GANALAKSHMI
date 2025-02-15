@@ -1,101 +1,142 @@
 .testimonials {
-    text-align: center;
-    padding: 50px 20px;
-    background: #fff;
-  }
-  
-  .section-title {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-  }
-  
-  .section-subtitle {
-    font-size: 16px;
-    color: #777;
-    margin-bottom: 30px;
-  }
-  
+  text-align: center;
+  padding: 50px 20px;
+  background: #fff;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.section-subtitle {
+  font-size: 16px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.slider-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 20px 0; /* More vertical padding */
+}
+
+.slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slick-slide > div {
+  margin: 0 15px; /* Adjust spacing between slides */
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  padding: 20px;
+  margin: 10px;
+  min-height: 250px;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-5px);
+}
+
+.testimonial-card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.testimonial-card h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.role {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.stars {
+  color: #f4b400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.review {
+  font-size: 14px;
+  color: #555;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+/* Slick Dots Styling */
+.slick-dots {
+  bottom: -30px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #bbb;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #ff4d4d;
+}
+
+/* 📌 RESPONSIVE DESIGN */
+
+/* ✅ 1440px & 1024px: Show 3 reviews */
+@media screen and (max-width: 1440px) {
   .slider-container {
-    width: 85%;
-    margin: 0 auto;
-    padding: 20px 0; /* More vertical padding */
+    width: 90%;
   }
-  
-  .slick-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+@media screen and (max-width: 1024px) {
+  .slider-container {
+    width: 95%;
   }
-  
-  .slick-slide > div {
-    margin: 0 20px; /* Ensures proper spacing between slides */
+}
+
+/* ✅ 768px: Show 2 reviews */
+@media screen and (max-width: 768px) {
+  .slider-container {
+    width: 95%;
   }
-  
-  
   .testimonial-card {
-    background: #fff;
-    /* padding: 20px; */
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
-    margin: 10px; /* Space between cards */
-    min-height: 250px; /* Ensures uniform height */
+    padding: 15px;
+    min-height: 230px;
   }
-  
-  .testimonial-card:hover {
-    transform: translateY(-5px);
+}
+
+/* ✅ 480px & 320px: Show 1 review */
+@media screen and (max-width: 480px) {
+  .slider-container {
+    width: 100%;
   }
-  
-  .testimonial-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 15px;
+  .testimonial-card {
+    padding: 10px;
+    min-height: 200px;
   }
-  
-  .testimonial-card h3 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
+}
+
+@media screen and (max-width: 320px) {
+  .slider-container {
+    width: 100%;
   }
-  
-  .role {
-    color: #888;
-    font-size: 14px;
-    margin-bottom: 10px;
+  .testimonial-card {
+    padding: 10px;
+    min-height: 190px;
   }
-  
-  .stars {
-    color: #f4b400;
-    font-size: 18px;
-    margin-bottom: 10px;
-  }
-  
-  .review {
-    font-size: 14px;
-    color: #555;
-    font-style: italic;
-    line-height: 1.5;
-  }
-  
-  /* Fix Slick slider spacing */
-  .slick-slide > div {
-    margin: 0 10px; /* Adjust spacing between slides */
-  }
-  
-  .slick-dots {
-    bottom: -30px;
-  }
-  
-  .slick-dots li button:before {
-    font-size: 12px;
-    color: #bbb;
-  }
-  
-  .slick-dots li.slick-active button:before {
-    color: #ff4d4d;
-  }
-  
+}

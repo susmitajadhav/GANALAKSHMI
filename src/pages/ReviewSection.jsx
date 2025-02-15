@@ -1,4 +1,3 @@
-//ReviewSectiom.jsx
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -47,16 +46,38 @@ const Testimonials = () => {
   const settings = {
     dots: true,
     infinite: true,
-    speed: 1000,
-    slidesToShow: 3,
+    speed: 500,
+    slidesToShow: 3,  // Default: 3 reviews for large screens
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    arrows: false,
-    centerMode: true,  
-    centerPadding: "40px", // Increase padding for better spacing
+    responsive: [
+      {
+        breakpoint: 1024, // Tablets & small laptops
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768, // Small tablets
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 480, // Mobile screens
+        settings: {
+          slidesToShow: 1, // ✅ Show only 1 review
+          centerMode: false, // ✅ Disable centering
+        },
+      },
+      {
+        breakpoint: 320, // Very small screens
+        settings: {
+          slidesToShow: 1, // ✅ Show only 1 review
+          centerMode: false, // ✅ Disable centering
+        },
+      },
+    ],
   };
-  
   
 
   return (

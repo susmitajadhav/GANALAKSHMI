@@ -11,16 +11,17 @@
 }
 
 /* Logo Styling */
-.logo img {
-    width: 160px;
-    height: auto;
-    object-fit: contain;
-    border-radius: 10px;
-    transition: transform 0.3s ease-in-out;
+/* Company Name as Logo */
+.company-name a {
+    font-size: 26px;
+    font-weight: bold;
+    color: #004D9B;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
 }
 
-.logo img:hover {
-    transform: rotate(5deg) scale(1.05);
+.company-name a:hover {
+    color: #00A84D;
 }
 
 /* 🔹 Navigation Links */

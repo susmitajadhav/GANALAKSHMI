@@ -22,14 +22,12 @@ const Navbar = () => {
       <div className="navbar-container">
         {/* Animated Logo */}
         <motion.div 
-          className="logo"
+          className="company-name"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <Link to="/">
-            <img src={logo} alt="SAV-Tech Associate Logo" />
-          </Link>
+          <Link to="/">Ganalakshmi Engineers</Link>
         </motion.div>
       </div>
 

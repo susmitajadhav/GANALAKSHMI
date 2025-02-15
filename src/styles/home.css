@@ -240,12 +240,12 @@
 }
 
 /* ===== Responsive & Stylish About Us Section ===== */
-.about-us-container {
+.about-us-container1 {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 1rem;
   padding: 60px 10%;
   background: #fff;
   border-radius: 15px;
@@ -255,8 +255,8 @@
 }
 
 /* Floating Background Animation */
-.about-us-container::before,
-.about-us-container::after {
+.about-us-container1::before,
+.about-us-container1::after {
   content: "";
   position: absolute;
   width: 200px;
@@ -266,12 +266,12 @@
   animation: floatAnimation 6s infinite ease-in-out;
 }
 
-.about-us-container::before {
+.about-us-container1::before {
   top: -50px;
   left: -50px;
 }
 
-.about-us-container::after {
+.about-us-container1::after {
   width: 250px;
   height: 250px;
   background: radial-gradient(circle, rgba(0, 123, 255, 0.2) 20%, transparent);
@@ -296,8 +296,7 @@
 }
 
 .about-image img {
-  width: 100%;
-  height: auto;
+  height: 400px;
   border-radius: 15px;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   transition: transform 0.3s ease-in-out;
@@ -316,7 +315,7 @@
 }
 
 /* Animated Title */
-.about-title {
+.about-title1{
   font-size: 2.5rem;
   font-weight: bold;
   color: #1f2937;
@@ -361,9 +360,9 @@
 
 /* Mobile (320px - 480px) */
 @media screen and (max-width: 480px) {
-  .about-us-container {
+  .about-us-container1 {
     flex-direction: column;
-    padding: 40px 5%;
+    padding: 30px 5%!important;
   }
   .about-image {
     max-width: 90%;
@@ -372,18 +371,22 @@
     max-width: 100%;
     text-align: center;
   }
-  .about-title {
-    font-size: 2rem;
+  .about-title1 {
+    font-size: 1.7rem;
+    margin-top: 5px;
   }
   .about-description,
   .about-mission {
     font-size: 1rem;
   }
+  .about-image img {   
+    height: 250px;
+  }
 }
 
 /* Tablets (768px) */
 @media screen and (max-width: 768px) {
-  .about-us-container {
+  .about-us-container1 {
     padding: 50px 8%;
     flex-direction: column;
   }
@@ -398,7 +401,7 @@
 
 /* Large Screens (1024px - 1440px) */
 @media screen and (max-width: 1024px) {
-  .about-us-container {
+  .about-us-container1{
     padding: 60px 10%;
   }
   .about-title {

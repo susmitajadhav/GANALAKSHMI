@@ -118,7 +118,7 @@ const Home = () => {
 
 
         <motion.div 
-      className="about-us-container"
+      className="about-us-container1"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
@@ -144,7 +144,7 @@ const Home = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1.5 }}
       >
-        <h2 className="about-title">
+        <h2 className="about-title1">
           About <span>Ganalakshmi Engineers</span>
         </h2>
         <motion.p 
@@ -174,7 +174,9 @@ const Home = () => {
           }}
           transition={{ type: "spring", stiffness: 200 }}
         >
-          Learn More
+         <Link to="/About" style={{ textDecoration: "none", color: "inherit" }}>
+    Learn More
+  </Link>
         </motion.button>
       </motion.div>
     </motion.div>

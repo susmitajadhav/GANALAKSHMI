@@ -14,6 +14,7 @@ import {
   FaGraduationCap,
   FaCertificate
 } from "react-icons/fa"; // Icons
+import Product from "../components/Product";
 
 const Home = () => {
   useEffect(() => {
@@ -179,25 +180,7 @@ const Home = () => {
     </motion.div>
 
     
-      <section className="product-section">
-          <h2 className="title" data-aos="fade-down">Our Products</h2>
-          <p className="subtitle" data-aos="fade-up">Explore our wide range of high-quality products.</p>
-          
-          <div className="product-grid">
-            {products.map((product, index) => (
-              <Link to={`/product/${product.id}`} key={product.id} className="product-card" data-aos="zoom-in" data-aos-delay={index * 200}>
-                <div className="image-container">
-                  <img src={product.image} alt={product.name} />
-                </div>
-                <div className="product-info">
-                  <h3>{product.name}</h3>
-                  <p className="price">{product.price}</p>
-                  <button className="buy-now">View Details</button>
-                </div>
-              </Link>
-            ))}
-          </div>
-        </section>
+    <Product/>
 
 
 

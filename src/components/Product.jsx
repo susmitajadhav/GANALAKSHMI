@@ -5,12 +5,12 @@ import "aos/dist/aos.css";
 import "../styles/product.css";
 
 const products = [
-  { id: 1, name: "12VDC Relay Card1", price: "$60.00", image: "https://ennovatechnology.com/IORELAY/15.png" },
-  { id: 2, name: "12VDC Relay Card2", price: "$21.00", image: "https://ennovatechnology.com/IORELAY/555.png" },
-  { id: 3, name: "12VDC Relay Card3", price: "$41.00", image: "https://ennovatechnology.com/IORELAY/7.png" },
-  { id: 4, name: "12VDC Relay Card4", price: "$18.00", image: "/images/product4.jpg" },
-  { id: 5, name: "12VDC Relay Card5", price: "$42.00", image: "https://ennovatechnology.com/IORELAY/3.png" },
-  { id: 6, name: "12VDC Relay Card6", price: "$39.00", image: "https://ennovatechnology.com/IORELAY/3.png" },
+  { id: 1, name: "12VDC Relay Card 4 Channel ", price: "$60.00", image: "https://ennovatechnology.com/IORELAY/15.png" },
+  { id: 2, name: "230VAC Relay Card 8 Channel", price: "$21.00", image: "https://ennovatechnology.com/IORELAY/555.png" },
+  { id: 3, name: "24VDC Relay Card 8 Channel", price: "$41.00", image: "https://ennovatechnology.com/IORELAY/7.png" },
+  { id: 4, name: "12VDC Relay Card 8 Channel", price: "$18.00", image: "https://ennovatechnology.com/IORELAY/555.png" },
+  { id: 5, name: "24VDC Relay Card 4 Channel", price: "$42.00", image: "https://ennovatechnology.com/IORELAY/3.png" },
+  { id: 6, name: "12VDC Relay Card 4 Channel ", price: "$39.00", image: "https://ennovatechnology.com/IORELAY/3.png" },
 ];
 
 const Product = () => {
